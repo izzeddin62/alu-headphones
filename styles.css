@@ -144,6 +144,7 @@ font-family: 'Source Sans 3', sans-serif;
 .header__menu {
   position: relative;
   z-index: 4;
+  display: none;
 }
 
 .header__nav--mobile {
@@ -225,6 +226,14 @@ font-family: 'Source Sans 3', sans-serif;
 
 
 @media screen and (max-width: 520px) {
+  .header {
+    justify-content: center;
+  }
+  .header__menu {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
   .header__nav {
     display: none;
   }
@@ -247,9 +256,6 @@ font-family: 'Source Sans 3', sans-serif;
     transform: translateY(-5px) rotate(-45deg);
     width: 100%;
   }
-  /* #menu:checked + .header__menu .menu .menu__line--after::after {
-    opacity: 0;
-  } */
 }
 
 
