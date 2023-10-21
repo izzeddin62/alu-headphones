@@ -201,6 +201,7 @@ font-family: 'Source Sans 3', sans-serif;
 
 .text {
   font-size: 16px;
+  line-height: 26px;
 }
 
 .button {
@@ -259,6 +260,59 @@ font-family: 'Source Sans 3', sans-serif;
 }
 
 
+.services {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  max-width: 1040px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.services__header {
+  margin-bottom: 40px;
+}
+.services__title {
+  color: #071629;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.services__description {
+  color: #071629;
+  margin-bottom: 96px;
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.title--sm {
+  font-size: 18px;
+}
+.text--sm {
+  font-size: 14px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.services__item-title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.services__item-description {
+  max-width: 210px;
+}
+
+@media screen and (max-width: 450px) {
+  .services__list {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 
 
